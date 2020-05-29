@@ -24,11 +24,12 @@
   <link rel="stylesheet" href="css/aos.css">
 
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://smtpjs.com/v3/smtp.js"></script> 
 
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
+  
 
   <div id="overlayer"></div>
   <div class="loader">
@@ -89,6 +90,7 @@
             <div class="owl-carousel slide-one-item-alt-text">
               <div class="slide-text">
                 <h1>Bienvenido a FLYWEIGHT</h1>
+                
                 <p class="mb-5"> </p>
                 <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
               </div>
@@ -286,9 +288,9 @@
     </div>
 
 
-    <div class="site-section testimonial-wrap custom-owl-carousel" id="testimonials-section">
+    <div class="site-section  testimonial-wrap custom-owl-carousel" style="padding:40px 0px" id="testimonials-section">
       <div class="container">
-        <div class="row text-center justify-content-center mb-5" data-aos="fade-up">
+        <div class="row text-center justify-content-center mb-2" data-aos="fade-up">
           <div class="col-lg-6 mb-5 text-center">
             <h2 class="section-title w-100 mx-auto">Team</h2>
             <p>En FlyWeight creemos que el trabajo en equipo es lo mas importante. Conoce mas sobre cada integrante</p>
@@ -349,7 +351,7 @@
     </div>
 
 
-    <div class="site-section" data-aos="fade">
+    <div class="site-section bg-light" data-aos="fade">
       <div class="container">
         <h2 class="section-title">Conocenos</h2>
         <a href="https://videos.ctfassets.net/go54bjdzbrgi/2PMLA05z5OVrPluxZxeHzw/94b630950c5b66bb66fcddecb2dcac1d/BACKGROUND_VIDEO_HOMEPAGE_2019.mp4"
@@ -374,29 +376,36 @@
             <h2 class="section-title mb-3">Contactanos</h2>
             <p class="mb-3">Estamos interesados en brindarte soluciones para tu empresa</p>
 
-            <form method="post">
+            <form id="contact" method="post">
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Subject">
+                  <input id="email_subject" type="text" class="form-control" placeholder="Subject">
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="email" class="form-control" placeholder="Email">
+                  <input id="email_address" type="email" class="form-control" placeholder="Email">
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-md-12">
-                  <textarea class="form-control" id="" cols="30" rows="10"
+                  <textarea id="email_message" class="form-control" id="" cols="30" rows="10"
                     placeholder="Write your message here."></textarea>
                 </div>
               </div>
+              <div id="toast_success" class="alert alert-success fade show" role="alert">
+                Gracias por contactarnos
 
+              </div>
+              <div id="toast_danger" class="alert alert-danger fade show" role="alert">
+                Llene todos los campos
+  
+              </div>
               <div class="form-group row">
-                <div class="col-md-6">
+                <div class="col-md-12">
 
-                  <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Send Message">
+                  <input id="send" type="button" class="btn btn-primary py-3 px-5 btn-block" value="Send Message">
                 </div>
               </div>
 
