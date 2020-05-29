@@ -3,6 +3,7 @@
 *.sass.map
 *.scss.map
 *.scss
+*.DS_Store
 # Logs
 logs
 *.log

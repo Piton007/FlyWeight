@@ -1202,3 +1202,9 @@ h1, h2, h3, h4, h5,
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+.service-container{
+  display:flex; justify-content:space-evenly;
+}
+.service-container > .service{
+ flex: 1 1 auto; margin: 0px 10px;
+}
